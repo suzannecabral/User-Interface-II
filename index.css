@@ -25,21 +25,74 @@ body {
 a {
     text-decoration:none;
     font-weight:bold;
-    color:blue;
+    color:white;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    color:white; 
+    font-family:sans-serif;
+}
+
+img {
+    border:none;
+}
 /* 
 =====================
-Images
+Title bar
 ===================== 
 */
+
+.title-bar {
+    background-color:pink;
+}
+.title-bar a{
+    background-color:palevioletred;
+}
+/* 
+=====================
+Intro
+===================== 
+*/
+.intro {
+    background-color:mediumspringgreen;
+}
+
+
 .intro img{
-    background-color:greenyellow;
+    background-color:seagreen;
     width:25rem;
     height:15rem;
 }
+
+.intro a{
+    background-color:lightseagreen;
+}
+/* 
+=====================
+Project Links
+===================== 
+*/
+
+section.project-links {
+    background-color:lemonchiffon;
+}
+
 .row img {
     width:10rem;
     height:10rem;
-    background-color:green;
+    background-color:khaki;
+}
+
+
+/* 
+=====================
+Footer
+===================== 
+*/
+footer {
+    background-color:plum;
+}
+
+footer a{
+    background-color:darkviolet;
 }
