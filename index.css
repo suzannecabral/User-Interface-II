@@ -42,6 +42,7 @@ h2 {
 
 a {
     text-decoration:none;
+    display:inline-block;
 }
 
 
@@ -61,7 +62,7 @@ Link Buttons
 }
 
 .intro a, footer a {
-    padding:1.2rem 2rem;
+    padding:1rem 2.8rem;
 }
 /* 
 =====================
@@ -71,7 +72,12 @@ Title bar / nav
 
 .title-bar {
     background-color:pink;
+    padding:2rem 0 1.5rem 3rem;
 
+}
+
+.title-bar h1 {
+    padding:0 0 1rem 0;
 }
 .title-bar a{
     background-color:palevioletred;
@@ -96,18 +102,18 @@ Intro
 
 .intro-text {
     width:40%;
+    min-width:20rem;
+    margin:0 0 0 3rem;
+    vertical-align:text-bottom;
 }
 
 .intro-text p {
     color:seagreen;
 }
-.intro-img{
-    background-color:seagreen;
-    width:20%;
-}
+
 
 .intro-text a{
-    background-color:seagreen;
+    background-color:rgb(118, 139, 127);
 }
 /* 
 =====================
@@ -121,6 +127,7 @@ section.project-links {
     display:flex;
     flex-flow:column;
     width:100%;
+    padding: 3rem 0;
 
 }
 
@@ -135,14 +142,12 @@ section.project-links {
 }
 
 .project{
-    width:15rem;
-    height:18rem;
+    width:20%;
+    min-width:15rem;
 }
 
 .project img {
-    width:15rem;
-    height:15rem;
-    background-color:khaki;
+    width:100%;
 }
 
 
@@ -154,6 +159,7 @@ Footer
 footer {
     background-color:plum;
     text-align:center;
+    padding:2rem 0 7rem 0;
 }
 
 footer a{
