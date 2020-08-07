@@ -25,7 +25,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6, p {
-    color:white; 
+    color:black; 
     font-family:sans-serif;
     line-height:1.25;
 }
@@ -48,12 +48,12 @@ a {
 }
 
 
-img {
-    border:none;
+article {
+    margin:2%;
 }
 
-article {
-    margin:0 1rem;
+header, header.title-bar, footer {
+    background-color:silver;
 }
 /* 
 =====================
@@ -64,11 +64,13 @@ Link Buttons
 */
 
 .title-bar a, .intro a, footer a {
-    color:white; 
+    color:black; 
+    background-color:white;
     font-family:sans-serif;
     line-height:1.25;
     font-weight:bold;
 }
+
 
 .title-bar a {
     padding:.5rem 1.4rem;
@@ -86,6 +88,9 @@ p {
     margin:1rem 0 0 0;
 
 }
+a:hover {
+    background-color:tomato;
+}
 /* 
 =====================
 Title bar / nav
@@ -93,7 +98,6 @@ Title bar / nav
 */
 
 .title-bar {
-    background-color:pink;
     padding:2rem 0 1.5rem 3rem;
 
 }
@@ -101,13 +105,11 @@ Title bar / nav
 .title-bar h1 {
     padding:0 0 1rem 0;
 }
-.title-bar a{
-    background-color:palevioletred;
-}
+
 
 .title-bar .youarehere {
-    background-color:white;
-    color:black;
+    background-color:black;
+    color:tomato;
 }
 
 
@@ -117,26 +119,20 @@ Intro
 ===================== 
 */
 .intro {
-    background-color:mediumspringgreen;
     display:flex;
     flex-flow:row wrap;
+    align-items:flex-end;
 }
 
 .intro .left {
-    width:50%;
-}
-
-.intro-text p {
-    color:seagreen;
+    /* width:50%; */
 }
 
 
-.intro-text a{
-    background-color:darkseagreen;
-}
 
 .right {
-    width:33rem;
+    min-width:25rem;
+    max-width:45%;
     margin:0 0 0 3rem;
 }
 
@@ -147,7 +143,6 @@ Project Links
 */
 
 section.project-links {
-    background-color:lemonchiffon;
     text-align:center;
     display:flex;
     flex-flow:column;
@@ -156,21 +151,22 @@ section.project-links {
 
 }
 
-.project-links p{
-    color:darkkhaki;
-}
 
 .row-content {
     display:flex;
     flex-flow:row wrap;
-    justify-content:space-around;
-    margin:0 0 1.5rem 0;
+    justify-content:space-between;
+    padding:.5rem 0;
 }
 
 .project{
-    width:23%;
+    width:24.5%;
     min-width:15rem;
-    margin:0 0.5%;
+    
+}
+
+.project a {
+    padding: 5%;
 }
 
 .project img {
@@ -184,11 +180,26 @@ Footer
 ===================== 
 */
 footer {
-    background-color:plum;
     text-align:center;
     padding:2rem 0 7rem 0;
 }
 
-footer a{
-    background-color:darkviolet;
+/* 
+=====================
+Borders 
+===================== 
+*/
+
+header a, .intro a, footer a, img {
+    border:2px solid black;
 }
+
+footer {
+    border-top:2px solid black;
+}
+
+header {
+    border-bottom:2px solid black;
+}
+
+
