@@ -55,6 +55,16 @@ article {
 header, header.title-bar, footer {
     background-color:silver;
 }
+
+/* .flex-content {
+    display:flex;
+    align-content:stretch;
+} */
+
+footer {
+    
+}
+
 /* 
 =====================
 Link Buttons
@@ -96,7 +106,10 @@ a:hover {
 Title bar / nav
 ===================== 
 */
-
+.navbuttons {
+    display:flex;
+    flex-flow:row wrap;
+}
 .title-bar {
     padding:2rem 0 1.5rem 3rem;
 
@@ -111,6 +124,7 @@ Title bar / nav
     background-color:black;
     color:tomato;
 }
+
 
 
 /* 
@@ -184,6 +198,24 @@ footer {
     padding:2rem 0 7rem 0;
 }
 
+.social-links {
+    margin:1.5rem 0 0 0;
+}
+.social-links a, .social-links img {
+    border:none;
+    padding:0;
+    margin:0;
+    background-color:transparent;
+}
+
+.social-links img {
+    height:2rem;
+    width:2rem;
+}
+
+.social-links img:hover {
+    filter: invert(100%);
+}
 /* 
 =====================
 Borders 
