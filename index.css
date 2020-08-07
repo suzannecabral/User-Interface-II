@@ -7,7 +7,7 @@ Reset (Brit)
     box-sizing:border-box;
     margin:0;
     padding:0;
-    border:solid gray 1px;
+    /* border:solid gray 1px; */
 }
 
 /* 
@@ -22,32 +22,45 @@ body {
 
 }
 
-a {
-    text-decoration:none;
-    font-weight:bold;
-    color:white;
-}
-
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p, a {
     color:white; 
     font-family:sans-serif;
 }
 
+h1, h2, h3, h4, h5, h6, a {
+    font-weight:bold;
+}
+
+a {
+    text-decoration:none;
+}
+
+
 img {
     border:none;
 }
+
+
 /* 
 =====================
-Title bar
+Title bar / nav
 ===================== 
 */
 
 .title-bar {
     background-color:pink;
+
 }
 .title-bar a{
     background-color:palevioletred;
 }
+
+.title-bar .youarehere {
+    background-color:white;
+    color:black;
+}
+
+
 /* 
 =====================
 Intro
@@ -55,17 +68,25 @@ Intro
 */
 .intro {
     background-color:mediumspringgreen;
+    display:flex;
+    flex-flow:row wrap;
 }
 
+.intro-text {
+    width:40%;
+}
 
-.intro img{
+.intro-text p {
+    color:seagreen;
+}
+.intro-img{
     background-color:seagreen;
-    width:25rem;
-    height:15rem;
+    width:35rem;
+    height:25rem;
 }
 
-.intro a{
-    background-color:lightseagreen;
+.intro-text a{
+    background-color:seagreen;
 }
 /* 
 =====================
@@ -75,11 +96,31 @@ Project Links
 
 section.project-links {
     background-color:lemonchiffon;
+    text-align:center;
+    display:flex;
+    flex-flow:column;
+    width:100%;
+
 }
 
-.row img {
-    width:10rem;
-    height:10rem;
+.project-links p{
+    color:darkkhaki;
+}
+
+.row-content {
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:space-around;
+}
+
+.project{
+    width:15rem;
+    height:18rem;
+}
+
+.project img {
+    width:15rem;
+    height:15rem;
     background-color:khaki;
 }
 
@@ -91,6 +132,7 @@ Footer
 */
 footer {
     background-color:plum;
+    text-align:center;
 }
 
 footer a{
