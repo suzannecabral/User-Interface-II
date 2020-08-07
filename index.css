@@ -52,6 +52,9 @@ img {
     border:none;
 }
 
+article {
+    margin:0 1rem;
+}
 /* 
 =====================
 Link Buttons
@@ -119,10 +122,8 @@ Intro
     flex-flow:row wrap;
 }
 
-.intro-text {
-    width:40rem;
-    margin:0 0 0 3rem;
-    vertical-align:text-bottom;
+.intro .left {
+    width:50%;
 }
 
 .intro-text p {
@@ -133,6 +134,12 @@ Intro
 .intro-text a{
     background-color:darkseagreen;
 }
+
+.right {
+    width:33rem;
+    margin:0 0 0 3rem;
+}
+
 /* 
 =====================
 Project Links
@@ -157,6 +164,7 @@ section.project-links {
     display:flex;
     flex-flow:row wrap;
     justify-content:space-around;
+    margin:0 0 1.5rem 0;
 }
 
 .project{
