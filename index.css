@@ -85,7 +85,10 @@ footer {
     align-content:stretch;
 } */
 
-footer {}
+/* i p{
+    font-size:.8rem;
+    color:#1b1120;
+} */
 
 /* 
 =====================
@@ -405,7 +408,7 @@ Breakpoints
 
     .right p{
         text-align:left;
-        padding:0 8%;
+        padding:0 6%;
 
     }
 
