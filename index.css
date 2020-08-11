@@ -11,11 +11,17 @@ Reset (Brit)
     /* border:solid gray 1px; */
 }
 
+
+
 /* 
 =====================
 General
 ===================== 
 */
+/* 
+html {
+    font-size:62.5%;
+} */
 
 
 
@@ -85,10 +91,6 @@ footer {
     align-content:stretch;
 } */
 
-/* i p{
-    font-size:.8rem;
-    color:#1b1120;
-} */
 
 /* 
 =====================
@@ -271,6 +273,10 @@ footer {
 
 .social-links img:hover {
     filter: invert(100%);
+}
+footer p{
+    font-size:.8rem;
+    color:#1b1120;
 }
 
 /* 
