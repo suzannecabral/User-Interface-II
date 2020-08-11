@@ -167,13 +167,19 @@ Intro
 .intro {
     display: flex;
     flex-flow: row wrap;
-    align-items: flex-end;
+    /* align-items: flex-end; */
 }
 
 .right {
-    min-width: 25rem;
-    max-width: 45%;
+    /* min-width: 25rem; */
+    /* max-width: 45%; */
     margin: 0 0 0 3rem;
+    width:45%;
+}
+
+.intro img{
+    width:45%;
+    height:100%;
 }
 
 /* 
@@ -185,23 +191,23 @@ Project Links
 section.project-links {
     text-align: center;
     display: flex;
-    flex-flow: column;
+    flex-flow: row wrap;
     width: 100%;
     padding: 3rem 0;
 
 }
 
 
-.row-content {
+/* .row-content {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     padding: .5rem 0;
-}
+} */
 
 .project {
     width: 24.5%;
-    min-width: 15rem;
+    /* min-width: 15rem; */
 
 }
 
@@ -212,6 +218,9 @@ section.project-links {
 .project img {
     width: 100%;
 }
+
+
+/* Hover Effects */
 
 .project a:hover {
     background-color: transparent;
@@ -298,7 +307,7 @@ Breakpoints
     } */
 
     article {
-        margin: 0 10%;
+        margin: 0;
     }
 
     /*Header*/
@@ -323,6 +332,13 @@ Breakpoints
         display: flex;
         flex-flow: column;
         align-items: center;
+    }
+
+    .intro-text {
+        margin:0 10%;
+    }
+    .intro img {
+        width:100%;
     }
 
     .right {
