@@ -288,8 +288,9 @@ header {
 Breakpoints 
 ===================== 
 */
-
+/* ----------------------------- */
 /* Tablet - 800px */
+/* ----------------------------- */
 
 @media (max-width:800px) {
     /* body {
@@ -344,11 +345,70 @@ Breakpoints
 
 }
 
-
+/* ----------------------------- */
 /* Mobile - 500px */
+/* ----------------------------- */
+
 
 @media (max-width:500px) {
     body {
-        background-color: yellow;
+        /* background-color: yellow; */
+        font-size:1.3rem;
     }
+
+    h1 {
+        font-size:2.5rem;
+    }
+
+    h2 {
+        font-size:2rem;
+        margin:1rem 0 0 0;
+    }
+
+    article {
+        margin:0;
+    }
+
+
+     /*Header*/
+
+     .title-bar {
+        padding:.8rem 0 0 0;
+    }
+
+    .navbuttons a {
+        width:100%;
+        font-size:1.6rem;
+    }
+
+      /*Intro*/
+
+    .right {
+        margin:0;
+    }
+
+    .right p{
+        text-align:left;
+        padding:0 8%;
+
+    }
+
+    .intro img {
+        width:100%;
+    }
+
+    .intro a {
+        margin:.7rem 0 .4rem 0;
+        padding:.8rem 1rem;
+    }
+
+    section.project-links {
+        padding:0;
+        margin:0;
+    }
+
 }
+
+
+
+
