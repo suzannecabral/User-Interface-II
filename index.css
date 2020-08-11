@@ -18,8 +18,8 @@ General
 */
 
 body {
-    color: black;
-    background-color: white;
+    color: #b9a69e;
+    background-color: #3e293a;
     font-size: 1.4rem;
 
 }
@@ -31,7 +31,7 @@ h4,
 h5,
 h6,
 p {
-    color: black;
+    color: #b9a69e;
     font-family: sans-serif;
     line-height: 1.25;
 }
@@ -66,7 +66,7 @@ article {
 header,
 header.title-bar,
 footer {
-    background-color: silver;
+    background-color: #1b1120;
 }
 
 /* .flex-content {
@@ -87,8 +87,9 @@ Link Buttons
 .title-bar a,
 .intro a,
 footer a {
-    color: black;
-    background-color: white;
+    background-color: #1b1120;
+    color: #b9a69e;
+    border: 3px solid #3e293a;
     font-family: sans-serif;
     line-height: 1.25;
     font-weight: bold;
@@ -140,8 +141,9 @@ Title bar / nav
 
 
 .title-bar .youarehere {
-    background-color: black;
+    background-color: #1b1120;
     color: tomato;
+    border-color: tomato;
 }
 
 
@@ -156,12 +158,6 @@ Intro
     flex-flow: row wrap;
     align-items: flex-end;
 }
-
-.intro .left {
-    /* width:50%; */
-}
-
-
 
 .right {
     min-width: 25rem;
@@ -217,7 +213,7 @@ section.project-links {
 
 .project .overlay:hover {
     transition: .5s ease-out;
-    opacity:1;
+    opacity: 1;
 }
 
 
@@ -260,7 +256,7 @@ Borders
 ===================== 
 */
 
-header a,
+/* header a,
 .intro a,
 footer a,
 img {
@@ -273,4 +269,65 @@ footer {
 
 header {
     border-bottom: 2px solid black;
+}
+ */
+
+/* 
+=====================
+Breakpoints 
+===================== 
+*/
+
+/* Tablet - 800px */
+
+@media (max-width:800px) {
+    body {
+        background-color: orange;
+    }
+
+    article {
+        margin: 0 10%;
+    }
+
+    /*Header*/
+    h1 {
+        text-align: center;
+    }
+
+    .title-bar div {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .navbuttons a {
+        width: 35%;
+        text-align: center;
+    }
+
+    /* Intro */
+
+    .intro {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .right {
+        min-width: 0;
+        max-width: 100%;
+        text-align: center;
+        width: 100%;
+    }
+
+
+}
+
+
+/* Mobile - 500px */
+
+@media (max-width:500px) {
+    body {
+        background-color: yellow;
+    }
 }
