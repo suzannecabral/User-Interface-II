@@ -1,0 +1,276 @@
+/* 
+=====================
+Reset (Brit)
+===================== 
+*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    /* border:solid gray 1px; */
+}
+
+/* 
+=====================
+General
+===================== 
+*/
+
+body {
+    color: black;
+    background-color: white;
+    font-size: 1.4rem;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    color: black;
+    font-family: sans-serif;
+    line-height: 1.25;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+article {
+    margin: 2%;
+}
+
+header,
+header.title-bar,
+footer {
+    background-color: silver;
+}
+
+/* .flex-content {
+    display:flex;
+    align-content:stretch;
+} */
+
+footer {}
+
+/* 
+=====================
+Link Buttons
+(shared styles)
+** space before ***
+===================== 
+*/
+
+.title-bar a,
+.intro a,
+footer a {
+    color: black;
+    background-color: white;
+    font-family: sans-serif;
+    line-height: 1.25;
+    font-weight: bold;
+}
+
+
+.title-bar a {
+    padding: .5rem 1.4rem;
+}
+
+h2 {
+    margin: 2rem 0 0 0;
+}
+
+p {
+    margin: 1rem 0 1rem 0;
+}
+
+.intro a,
+footer a {
+    padding: 1rem 2.8rem;
+    margin: 1rem 0 0 0;
+
+}
+
+a:hover {
+    background-color: tomato;
+    transition: .5s ease-out;
+}
+
+/* 
+=====================
+Title bar / nav
+===================== 
+*/
+.navbuttons {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.title-bar {
+    padding: 2rem 0 1.5rem 3rem;
+
+}
+
+.title-bar h1 {
+    padding: 0 0 1rem 0;
+}
+
+
+.title-bar .youarehere {
+    background-color: black;
+    color: tomato;
+}
+
+
+
+/* 
+=====================
+Intro
+===================== 
+*/
+.intro {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-end;
+}
+
+.intro .left {
+    /* width:50%; */
+}
+
+
+
+.right {
+    min-width: 25rem;
+    max-width: 45%;
+    margin: 0 0 0 3rem;
+}
+
+/* 
+=====================
+Project Links
+===================== 
+*/
+
+section.project-links {
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    padding: 3rem 0;
+
+}
+
+
+.row-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: .5rem 0;
+}
+
+.project {
+    width: 24.5%;
+    min-width: 15rem;
+
+}
+
+.project a {
+    padding: 5%;
+}
+
+.project img {
+    width: 100%;
+}
+
+.project a:hover {
+    background-color: transparent;
+}
+
+.project img:hover {
+    transition: .5s ease-out;
+    filter: grayscale(100%) brightness(1.2) invert(20%) sepia(80%) hue-rotate(-37deg) saturate(3.5);
+}
+
+.project .overlay:hover {
+    transition: .5s ease-out;
+    opacity:1;
+}
+
+
+
+
+/* 
+=====================
+Footer
+===================== 
+*/
+footer {
+    text-align: center;
+    padding: 2rem 0 7rem 0;
+}
+
+.social-links {
+    margin: 1.5rem 0 0 0;
+}
+
+.social-links a,
+.social-links img {
+    border: none;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+}
+
+.social-links img {
+    height: 2rem;
+    width: 2rem;
+}
+
+.social-links img:hover {
+    filter: invert(100%);
+}
+
+/* 
+=====================
+Borders 
+===================== 
+*/
+
+header a,
+.intro a,
+footer a,
+img {
+    border: 2px solid black;
+}
+
+footer {
+    border-top: 2px solid black;
+}
+
+header {
+    border-bottom: 2px solid black;
+}
