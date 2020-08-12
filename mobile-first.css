@@ -1,0 +1,213 @@
+/* 
+=====================
+Reset (Brit)
+===================== 
+*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    /* border:solid gray 1px; */
+}
+
+
+
+/* 
+=====================
+General
+===================== 
+*/
+
+/* html {
+    font-size:62.5%;
+} */
+
+body {
+    background-color:#3e293a;
+    color:#b9a69e;
+    font-size:1.4rem;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    color:#b9a69e;
+    font-family:sans-serif;
+    line-height:1.25;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight:bold;
+}
+
+h1 {
+    font-size:3rem;
+    padding:5% 0;
+    text-align:center;
+}
+
+h2 {
+    font-size:2rem;
+    margin:1.5rem 0 .6rem 0;
+}
+p{
+    font-size:1.1rem;
+    margin:1rem 0 1rem 0;
+}
+a {
+    text-decoration:none;
+    display:inline-block;
+}
+
+i {
+    font-size:2.2rem;
+}
+
+a:hover {
+    background-color:tomato;
+}
+
+a i:hover{
+    background-color:none;
+    color:tomato;
+}
+
+header, header.title-bar, footer {
+    background-color: #1b1120;
+}
+
+footer p {
+    font-size:.4rem;
+    color: #1b1120;
+}
+/* 
+=====================
+Top Nav
+===================== 
+*/
+
+.title-bar a, .intro a, footer a{
+    background-color:#1b1120;
+    color:#b9a69e;
+    border:3px solid #3e293a;
+    font-family:sans-serif;
+    line-height:1.25;
+    font-size:1.4rem;
+    font-weight:bold;
+    padding:.5rem 1.4rem;
+}
+
+.navbuttons {
+    display:flex;
+    flex-flow:column;
+    text-align:center;
+}
+
+/* 
+=====================
+Intro
+===================== 
+*/
+
+.intro-text {
+    margin:0 6%;
+}
+.intro img {
+    width:100%;
+}
+
+/* 
+=====================
+Project Links
+===================== 
+*/
+.project-links {
+    display:flex;
+    flex-flow: row wrap;
+}
+
+.project {
+    width:50%;
+    text-align:center;
+    margin:0 0 1rem 0;
+}
+.project img {
+    width:100%;
+}
+
+/* 
+=====================
+Footer
+===================== 
+*/
+
+footer {
+    padding:.5rem 0 0 0;
+    text-align:center;
+}
+
+footer a.icon {
+    border:none;
+    margin: .8rem 1rem 0 0;
+    padding:0;
+}
+
+
+/* 
+=====================
+Media Queries
+===================== 
+*/
+
+/* Tablet 800px */
+@media (min-width:800px){
+    
+    h2 {
+        font-size:2.5rem;
+    }
+    .navbuttons {
+        align-items:center;
+    }
+     .navbuttons a {
+        font-size:1.6rem;
+        width:60%;
+    }
+    .intro {
+        text-align:center;
+    }
+    .intro-text {
+        padding:0 8%;
+    }
+    .intro-text p {
+        font-size:1.4rem;
+        padding-bottom:1.5rem;
+    }
+
+
+
+    .project{
+        padding:2%;
+    }
+
+
+
+}
+
+@media (min-width:1200px){
+    /* body {
+        background-color:yellow;
+    } */
+
+    .navbuttons{
+        flex-flow:row wrap;
+    }
+    .navbuttons a{
+        width:25%;
+    }
+    .projectlinks {
+        flex-flow:row wrap;
+    
+    }
+    .project {
+        width:25%;
+    }
+}
